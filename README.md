@@ -1,1 +1,1 @@
-# bd-nid
+# nid
