@@ -48,13 +48,6 @@ This project complies with GitHub's policies and is designed for **educational u
 
 ---
 
-### 💻 Developed by:  
-**[Sujon0xff](https://github.com/sujon0xff)**  
-
----
-
 ## 📝 License  
-This project is intended strictly for **educational** and **non-commercial** purposes. All rights reserved to the respective owners of any images, logos, or trademarks used in the template.
-
----
+> This project is intended strictly for **educational** and **non-commercial** purposes. All rights reserved to the respective owners of any images, logos, or trademarks used in the template.
 
