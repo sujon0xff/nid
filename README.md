@@ -1,4 +1,4 @@
-# NID Card Generator - Educational Tool 🇧🇩
+# NID Card Generator - Educational Tool
 
 Welcome to the **NID Card Generator** project! This is an **educational** and **demonstration** tool designed to show how to create a customizable Bangladesh NID card.  
 ---
