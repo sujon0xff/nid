@@ -1,14 +1,14 @@
 # NID Card Generator - Educational Tool 🇧🇩
 
 Welcome to the **NID Card Generator** project! This is an **educational** and **demonstration** tool designed to show how to create a customizable Bangladesh NID card.  
-
-🌐 **Website Link**:  
-[Visit the Tool](https://sujon0xff.github.io/nid/)  
-
 ---
 
-## 🛠️ How to Use  
-1. **Go to the Website**: Access the tool via the link above.  
+## 🛠️ How to Use?
+
+1. **Visit Website:**
+
+    - [![Visit Website](https://img.shields.io/badge/Visit-Website-blue?style=for-the-badge)](https://bdorgacare.com/)
+      
 2. **Customize Your NID**:  
    - Modify details such as text and images within the NID template.  
    - Add your preferred customizations to learn how to manipulate images and text using web technologies.  
