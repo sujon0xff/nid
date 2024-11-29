@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap');
+        @import url('https://fonts.maateen.me/kalpurush/font.css');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #3b82f6;
+            --accent-color: #60a5fa;
+            --background-color: #f0f9ff;
+            --text-color: #1e3a8a;
+        }
+
+        body {
+            font-family: 'Noto Sans Bengali', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--background-color) 0%, #dbeafe 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            animation: fadeIn 1s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text-color);
+            margin-bottom: 30px;
+            font-size: 1.7em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: bounceIn 1s ease;
+        }
+
+        .id-card {
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: white;
+            transition: transform 0.3s ease;
+        }
+
+        .id-card:hover {
+            transform: scale(1.02);
+        }
+
+        .id-card img.template {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .id-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; 
+        }
+        
+           .note {
+            font-size: 11px;
+            color: #333;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.1);
+            width: 245px; 
+           height: 60px;
+             color: red;
+    
+        }
+
+        .profile-photo-container {
+            position: absolute;
+            left: 6%;
+            top: 18%;
+            width: 20%;
+            height: auto;
+            aspect-ratio: 3/3.4;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            pointer-events: auto; 
+        }
+
+        .profile-photo-container:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            opacity: 1;
+        }
+
+        .profile-photo-container:hover .hover-text.show {
+            transform: translateY(0);
+        }
+
+        .hover-text.hide {
+            display: none;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-overlay {
+            position: absolute;
+            cursor: pointer;
+            padding: 2px 5px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            pointer-events: auto; 
+            z-index: 10; 
+        }
+
+        .text-overlay:hover {
+            background-color: rgba(37, 99, 235, 0.1);
+            transform: scale(1.05);
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+            animation: fadeInUp 1s ease;
+        }
+
+        button {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            font-family: 'Noto Sans Bengali', Arial, sans-serif;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        #editModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 400px;
+            animation: slideInUp 0.3s ease;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans Bengali', Arial, sans-serif;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            text-align: center;
+            font-size: 10.8px;
+            color: var(--text-color);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--secondary-color);
+        }
+
+       /* আপনি টেক্সটের পজিশন এইখান থেকে ঠিক করতে পারেন। */
+       
+        .name { left: 36%; top: 17%; font-size: 11px; font-family: 'Kalpurush', sans-serif; }
+        .name-en { left: 36%; top: 21.9%; font-size: 9.8px; font-family: Arial, sans-serif; }
+        .father { left: 36%; top: 25.4%; font-size: 11px; font-family: 'Kalpurush', sans-serif; }
+        .mother { left: 36%; top: 29.7%; font-size: 11px; font-family: 'Kalpurush', sans-serif; }
+        .birth { left: 49%; top: 34.4%; font-size: 10.8px; color: red; font-family: Arial, sans-serif; }
+        .date { left: 74%; top: 81.9%; font-size: 9px; font-family: 'Roboto Mono', monospace; }
+        .blood { left: 35%; top: 72%; font-size: 9px; color: red; }
+        .nid { left: 42%; top: 38.6%; font-size: 13px; color: red; font-family: 'Roboto Mono', monospace; }
+        .holding { left: 26.4%; top: 62.3%; font-size: 8px; font-family: 'Roboto Mono', monospace; }
+        .address { left: 44%; top: 62%; font-size: 8.2px; font-family: 'Kalpurush', sans-serif; }
+        .post { left: 20.8%; top: 64.5%; font-size: 8.2px; font-family: 'Kalpurush', sans-serif; }
+        .signature { left: 7%; top: 36%; font-size: 12px; font-family: 'Dancing Script', cursive; }
+/* আপনি টেক্সটের পজিশন এইখান থেকে ঠিক করতে পারেন। */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+        #desktop-message {
+            display: none;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid #ff0000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 768px) {
+            #mobile-content {
+                display: none;
+            }
+            
+
+            #desktop-message {
+                display: block;
+            }
+        }
