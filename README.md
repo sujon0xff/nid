@@ -34,7 +34,11 @@ Welcome to the **NID Card Generator** project! This is an **educational** and **
    **Do not use this tool for fraudulent or harmful activities.** Misuse of this tool could result in legal consequences.  
 - **Open Source Information**:  
    - The JavaScript version of this tool is **open source**.  
-   - A similar **PHP-based open-source version** can be found in the `NID-PHPV` folder, designed for educational purposes only.link format of PHP version `http://yourdomain.com/yourscript.php?img=IMAGE_URL&name=NAME&name_en=NAME_EN&baba=BABA&mom=MOM&birth=BIRTH&nid=NID&hold=HOLD&address=ADDRESS&grade=GRADE&dakgor=DAKGOR&signature=SIGNATURE`just input info in the parameters and it will work.
+   - A similar **PHP-based open-source version** can be found in the `NID-PHPV` folder, designed for educational purposes only.link format of PHP version
+
+ ```http://yourdomain.com/yourscript.php?img=IMAGE_URL&name=NAME&name_en=NAME_EN&baba=BABA&mom=MOM&birth=BIRTH&nid=NID&hold=HOLD&address=ADDRESS&grade=GRADE&dakgor=DAKGOR&signature=SIGNATURE``` 
+ 
+just input info in the parameters and it will work.
 
 ---
 
