@@ -6,9 +6,9 @@ Welcome to the **NID Card Generator** project! This is an **educational** and **
 
 ## 🛠️ How to Use?
 
-1. **Visit Website:**
+1. **Download the code:**
 
-    - [![Visit Website](https://img.shields.io/badge/Visit-Website-blue?style=for-the-badge)](https://sujon0xff.github.io/nid/)
+    - Host the script on your hosting.
       
 2. **Customize Your NID**:  
    - Modify details such as text and images within the NID template.  
